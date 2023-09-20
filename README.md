@@ -34,13 +34,13 @@ To install this project, follow these steps:
 3. Install the dependencies:
 
 ```
-- bun install
+- yarn install
 ```
 
 4. Start the development server:
 
 ```
-- bun dev
+- yarn dev
 ```
 
 <br>
