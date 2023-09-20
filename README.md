@@ -28,7 +28,7 @@ To install this project, follow these steps:
 2. Navigate to the project directory:
 
 ```
-- cd ectoplate
+- cd witch-crafts
 ```
 
 3. Install the dependencies:
