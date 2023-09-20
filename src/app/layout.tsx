@@ -7,6 +7,7 @@ const definition = {
 	title: "Witch Crafts | My handcraft components collection.",
 	description: " My handcraft components collection.",
 	resumeTitle: "| WC",
+	icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪄</text></svg>",
 };
 
 export const metadata: Metadata = {
@@ -25,21 +26,6 @@ export const metadata: Metadata = {
 		locale: "pt_BR",
 		alternateLocale: "en_US",
 		countryName: "Brasil",
-
-		images: [
-			{
-				url: "/cover.jpg",
-				secureUrl: "/cover.jpg",
-				alt: "Open Graph Visual Image",
-				type: "jpg",
-			},
-			{
-				url: "/cover.png",
-				secureUrl: "/cover.png",
-				alt: "Open Graph Visual Image",
-				type: "png",
-			},
-		],
 	},
 
 	twitter: {
@@ -47,21 +33,6 @@ export const metadata: Metadata = {
 		description: definition.description,
 		card: "summary_large_image",
 		creator: "@evvvrado",
-
-		images: [
-			{
-				url: "/cover.jpg",
-				secureUrl: "/cover.jpg",
-				alt: "Open Graph Visual Image",
-				type: "jpg",
-			},
-			{
-				url: "/cover.png",
-				secureUrl: "/cover.png",
-				alt: "Open Graph Visual Image",
-				type: "png",
-			},
-		],
 	},
 
 	icons: [
@@ -73,17 +44,17 @@ export const metadata: Metadata = {
 			rel: "icon",
 			type: "image/png",
 			sizes: "32x32",
-			url: "/favicon-32x32.png",
+			url: definition.icon,
 		},
 		{
 			rel: "icon",
 			type: "image/png",
 			sizes: "16x16",
-			url: "/favicon-16x16.png",
+			url: definition.icon,
 		},
 		{
 			rel: "icon",
-			url: "/favicon.ico",
+			url: definition.icon,
 		},
 	],
 

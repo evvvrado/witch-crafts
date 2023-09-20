@@ -46,4 +46,4 @@ To install this project, follow these steps:
 <br>
 <br>
 
-> forked from [ectoplate](https://https://github.com/evvvrado/ectoplate) - @evvvrado
+> forked from [ectoplate](https://github.com/evvvrado/ectoplate) - @evvvrado
