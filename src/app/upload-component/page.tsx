@@ -32,7 +32,7 @@ const UploadComponent: NextPage = () => {
 						visually appealing user interface. My inspiration for
 						this project came from{" "}
 						<Link
-							className="text-gray-800"
+							className="text-gray-800 underline underline-offset-4"
 							target="_blank"
 							href={
 								"https://github.com/WillMoreiraDev/component-upload"

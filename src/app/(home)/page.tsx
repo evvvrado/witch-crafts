@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 							add a touch of mystique to your projects. You can
 							check more of my work here{" "}
 							<Link
-								className="text-gray-800"
+								className="text-gray-800 underline underline-offset-4"
 								target="_blank"
 								href={
 									"https://github.com/evvvrado/witch-crafts"
@@ -35,6 +35,7 @@ const Home: NextPage = () => {
 					<li>
 						<Link
 							href="/upload-component"
+							title="Go to Upload Component Page."
 							className="font-semibold text-gray-800 transition-all hover:opacity-70"
 						>
 							<span className="me-2">📁</span> Upload Component
