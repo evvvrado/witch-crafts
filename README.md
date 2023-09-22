@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="cover.png" width="1200">
+</p>
+
 ### 🪄 WITCH CRAFTS
 
 WitchCrafts is a bewitching repository dedicated to the enchanting world of handcrafted<br> components with a spooky twist. Dive into the realm of Halloween magic with a curated collection of meticulously crafted, ghastly-themed creations that are sure to add a touch of mystique to your projects.

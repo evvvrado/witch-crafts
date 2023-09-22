@@ -1,5 +1,6 @@
 import { Metadata, NextPage } from "next";
 
+import PageTemplate from "@/components/page-template";
 import * as Upload from "./components/upload";
 import Link from "next/link";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 const UploadComponent: NextPage = () => {
 	return (
-		<main className="bg-gray-50">
+		<PageTemplate key={"upload"}>
 			<div className="m-auto flex h-screen w-screen flex-col items-center justify-center">
 				<div className="mb-10 max-w-xs">
 					<Link
@@ -55,7 +56,7 @@ const UploadComponent: NextPage = () => {
 					<Upload.Trigger>Ready</Upload.Trigger>
 				</Upload.Root>
 			</div>
-		</main>
+		</PageTemplate>
 	);
 };
 

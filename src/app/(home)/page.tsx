@@ -1,12 +1,16 @@
 import { NextPage } from "next";
 import Link from "next/link";
+import PageTemplate from "@/components/page-template";
+import Logo from "@/components/evvvrado-logo";
 
 const Home: NextPage = () => {
 	return (
-		<main className="bg-gray-50">
+		<PageTemplate key={"home"}>
 			<nav className="m-auto flex h-screen w-screen items-center justify-center">
 				<ul>
 					<li className="max-w-xs">
+						<Logo className="mb-8" />
+
 						<h1 className="mb-8 block select-none text-4xl font-semibold transition-colors">
 							<span className=" bg-gradient-to-r from-gray-900 to-gray-500 bg-clip-text text-transparent">
 								Check some of my crafts
@@ -46,7 +50,7 @@ const Home: NextPage = () => {
 					</li>
 				</ul>
 			</nav>
-		</main>
+		</PageTemplate>
 	);
 };
 

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 import { inter } from "@/styles/fonts";
 import Link from "next/link";
+import PageContainer from "@/components/page-container";
 
 const definition = {
 	title: "Witch Crafts | My handcraft components collection.",
@@ -83,7 +84,7 @@ export default function RootLayout({
 	return (
 		<html className={`${inter.variable}`} lang="pt-BR">
 			<body>
-				{children}
+				<PageContainer>{children}</PageContainer>
 
 				<footer className="fixed bottom-0 left-0 right-0 z-10 w-full border border-solid border-t-gray-200 bg-gray-50 py-4 text-center text-sm text-gray-400">
 					<Link

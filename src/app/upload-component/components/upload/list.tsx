@@ -36,8 +36,13 @@ const ListItem: React.FC<{
 	removeItem: (index: number) => void;
 }> = ({ file, index, removeItem }) => {
 	const fileName = useMemo(() => {
-		if (file.name.length > 14) {
-			return file.name.slice(0, 14).concat(`.${file.name.split(".")[1]}`);
+		const [fileText, fileExtension] = file.name.split(".");
+
+		if (fileText.length > 14) {
+			const truncatedName = fileText.slice(0, 8);
+			const last4Chars = fileText.slice(-4);
+
+			return `${truncatedName}...${last4Chars}.${fileExtension}`;
 		}
 
 		return file.name;
