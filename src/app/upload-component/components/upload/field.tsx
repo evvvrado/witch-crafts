@@ -28,6 +28,7 @@ const Field: React.FC = () => {
 			onChange={handleFilesSelected}
 			type="file"
 			multiple
+			maxLength={3}
 			className="mb-8 hidden"
 			accept="image/jpeg,image/gif,image/png,application/pdf"
 		/>

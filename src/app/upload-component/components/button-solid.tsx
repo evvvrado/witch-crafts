@@ -1,5 +1,6 @@
 import { cn } from "@/app/styles/mixins";
 import ButtonBase from "./button-base";
+import { HTMLAttributes } from "react";
 
 const solidVariants = {
 	primary:
@@ -12,11 +13,9 @@ interface ButtonSolidProps {
 	children: React.ReactNode;
 }
 
-const ButtonSolid: React.FC<ButtonSolidProps & ButtonBaseProps> = ({
-	variant = "primary",
-	children,
-	...restProps
-}) => {
+const ButtonSolid: React.FC<
+	HTMLAttributes<HTMLButtonElement> & ButtonSolidProps & ButtonBaseProps
+> = ({ variant = "primary", children, ...restProps }) => {
 	return (
 		<ButtonBase
 			{...restProps}

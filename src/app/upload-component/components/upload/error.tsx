@@ -2,12 +2,39 @@
 
 import React from "react";
 import { useUpload } from "./root";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Error: React.FC = () => {
 	const { fileError } = useUpload();
 
-	if (fileError)
-		return <span className="mb-3 mt-3 text-red-400">{fileError}</span>;
+	return (
+		<AnimatePresence mode="wait" initial={false}>
+			{fileError && (
+				<motion.span
+					layout
+					initial={{
+						opacity: 0,
+						height: 0,
+					}}
+					animate={{
+						opacity: 1,
+						height: "max-content",
+					}}
+					exit={{
+						opacity: 0,
+						height: 0,
+					}}
+					transition={{
+						ease: "linear",
+						duration: 0.1,
+					}}
+					className="mb-3 mt-3 block  text-red-400"
+				>
+					{fileError}
+				</motion.span>
+			)}
+		</AnimatePresence>
+	);
 };
 
 export default Error;

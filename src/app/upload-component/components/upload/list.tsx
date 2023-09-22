@@ -7,10 +7,11 @@ import { useUpload } from "./root";
 import { AnimatePresence, motion } from "framer-motion";
 
 const List: React.FC = () => {
-	const { files, onFilesSelected } = useUpload();
+	const { files, onFilesSelected, setFileError } = useUpload();
 
 	function removeItem(removeIndex: number) {
 		onFilesSelected(files.filter((file, index) => index != removeIndex));
+		setFileError(undefined);
 	}
 
 	return (
@@ -18,7 +19,7 @@ const List: React.FC = () => {
 			<AnimatePresence>
 				{files.map((file, index) => (
 					<ListItem
-						key={index}
+						key={file.name}
 						file={file}
 						index={index}
 						removeItem={removeItem}
@@ -56,25 +57,26 @@ const ListItem: React.FC<{
 
 	return (
 		<motion.li
-			layout
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			exit={{
-				opacity: 0,
-			}}
+			exit={{ opacity: 0 }}
+			layout
 			transition={{ opacity: { duration: 0.2 } }}
-			className="group flex w-full cursor-default items-center gap-4 overflow-hidden rounded-md border border-slate-300 bg-white px-4 py-2 text-black"
+			className="group flex w-full origin-top cursor-default items-center gap-4 overflow-hidden rounded-md border border-slate-300 bg-white px-4 py-2 text-black"
 		>
-			<picture className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-slate-200">
+			<picture className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full ">
+				<div className="absolute inset-0 animate-pulse bg-slate-200"></div>
+
 				{file.type === "application/pdf" ? (
 					<iframe
 						src={URL.createObjectURL(file)}
 						title={file.name}
+						className="relative"
 					></iframe>
 				) : (
 					// eslint-disable-next-line @next/next/no-img-element
 					<img
-						className="frame"
+						className="relative frame"
 						src={URL.createObjectURL(file)}
 						alt={file.name}
 					/>

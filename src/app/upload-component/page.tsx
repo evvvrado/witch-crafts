@@ -1,6 +1,5 @@
 import { Metadata, NextPage } from "next";
 
-import ButtonSolid from "./components/button-solid";
 import * as Upload from "./components/upload";
 import Link from "next/link";
 
@@ -15,7 +14,7 @@ const UploadComponent: NextPage = () => {
 				<div className="mb-10 max-w-xs">
 					<Link
 						href={"/"}
-						className="mb-10 block transition-opacity hover:opacity-60"
+						className="-ms-4 mb-10 block w-fit rounded-lg px-4 py-2 font-semibold text-gray-800 transition-all  hover:bg-gray-100"
 					>
 						⬅️ Back
 					</Link>
@@ -32,7 +31,7 @@ const UploadComponent: NextPage = () => {
 						visually appealing user interface. My inspiration for
 						this project came from{" "}
 						<Link
-							className="text-gray-800 underline underline-offset-4"
+							className="text-gray-800 underline underline-offset-4 hover:text-gray-600"
 							target="_blank"
 							href={
 								"https://github.com/WillMoreiraDev/component-upload"
@@ -53,7 +52,7 @@ const UploadComponent: NextPage = () => {
 
 					<Upload.Error />
 
-					<ButtonSolid variant="primary">Ready</ButtonSolid>
+					<Upload.Trigger>Ready</Upload.Trigger>
 				</Upload.Root>
 			</div>
 		</main>

@@ -19,7 +19,7 @@ html {
 }
 
 main::after {
-	@apply pointer-events-none absolute inset-0 w-full max-w-[192rem] bg-[center_top] bg-repeat opacity-10 content-[""];
+	@apply pointer-events-none absolute inset-0 z-0 w-full max-w-[192rem] bg-[bottom_center] bg-repeat opacity-10 content-[""];
 
 	-webkit-mask-image: radial-gradient(
 		56.04% 56.2% at 50% 40%,
@@ -31,5 +31,5 @@ main::after {
 			center top / 2.9rem 2.9rem repeat,
 		linear-gradient(rgba(0, 0, 0, 0.2) 0.1rem, transparent 0.1rem);
 
-	background-size: 1.5rem 1.5rem;
+	background-size: 1.4rem 1.4rem;
 }
