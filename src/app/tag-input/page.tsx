@@ -1,5 +1,3 @@
-"use client";
-
 import PageTemplate from "@/components/page-template";
 import { Metadata, NextPage } from "next";
 import Link from "next/link";

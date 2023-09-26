@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/app/styles/mixins";
 import React from "react";
 
