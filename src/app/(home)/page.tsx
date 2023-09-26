@@ -39,13 +39,23 @@ const Home: NextPage = () => {
 						</p>
 					</li>
 
-					<li>
+					<li className="mb-5">
 						<Link
 							href="/upload-component"
 							title="Go to Upload Component Page."
-							className=" -ms-4 rounded-lg px-4 py-2 font-semibold text-gray-800 transition-all hover:bg-gray-100 "
+							className="-ms-4 rounded-lg px-4 py-2 font-semibold text-gray-800 transition-all hover:bg-gray-100 "
 						>
 							<span className="me-2">📁</span> Upload Component
+						</Link>
+					</li>
+
+					<li className="mb-5">
+						<Link
+							href="/tag-input"
+							title="Go to Tag Input Page."
+							className="-ms-4 rounded-lg px-4 py-2 font-semibold text-gray-800 transition-all hover:bg-gray-100 "
+						>
+							<span className="me-2">🏷️</span> Tag Input
 						</Link>
 					</li>
 				</ul>
