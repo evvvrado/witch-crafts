@@ -3,5 +3,6 @@ import Field from "./field";
 import List from "./list";
 import Trigger from "./trigger";
 import Error from "./error";
+import Counter from "./counter";
 
-export { Root, Field, List, Trigger, Error };
+export { Root, Field, List, Trigger, Error, Counter };

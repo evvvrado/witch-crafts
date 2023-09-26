@@ -6,6 +6,7 @@ import React from "react";
 interface TagInputContext {
 	id: string;
 	tagList: string[];
+	maxInputs: number;
 	insertTag: () => void;
 	removeTag: (tag: string) => void;
 	typingTag: string | undefined;
@@ -47,11 +48,13 @@ const Root: React.FC<
 		if (!tag) return;
 
 		setTagList([...tagList.filter((listItem) => listItem != tag)]);
+		setErrorMessage("");
 	};
 
 	const value = {
 		id: id || customId,
 		tagList,
+		maxInputs,
 		insertTag,
 		removeTag,
 		typingTag,
