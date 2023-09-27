@@ -1,7 +1,8 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import PageTemplate from "@/components/page-template";
-import Logo from "@/components/evvvrado-logo";
+
+import Logo from "@/core/evvvrado-logo";
+import PageTemplate from "@/core/page-template";
 
 const Home: NextPage = () => {
 	return (

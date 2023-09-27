@@ -1,8 +1,9 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { useUpload } from "./root";
+
 import ButtonSolid from "../button-solid";
+import { useUpload } from "./root";
 
 const Trigger: React.FC<{
 	children: ReactNode;

@@ -1,9 +1,10 @@
 import "@/styles/css/globals.css";
-import type { Metadata } from "next";
 
-import { inter } from "@/styles/fonts";
+import type { Metadata } from "next";
 import Link from "next/link";
-import PageContainer from "@/components/page-container";
+
+import PageContainer from "@/core/page-container";
+import { inter } from "@/styles/fonts";
 
 const definition = {
 	title: "Witch Crafts | My handcraft components collection.",

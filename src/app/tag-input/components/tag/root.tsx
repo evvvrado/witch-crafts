@@ -1,7 +1,8 @@
 "use client";
 
-import { cn } from "@/app/styles/mixins";
 import React from "react";
+
+import { cn } from "@/app/styles/mixins";
 
 interface TagInputContext {
 	id: string;

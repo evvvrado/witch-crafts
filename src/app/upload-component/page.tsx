@@ -1,8 +1,9 @@
 import { Metadata, NextPage } from "next";
-
-import PageTemplate from "@/components/page-template";
-import * as Upload from "./components/upload";
 import Link from "next/link";
+
+import PageTemplate from "@/core/page-template";
+
+import * as Upload from "./components/upload";
 
 export const metadata: Metadata = {
 	title: "Upload Component",

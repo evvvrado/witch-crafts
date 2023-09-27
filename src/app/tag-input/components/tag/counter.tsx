@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
-import { useTagInput } from "./root";
+
 import { cn } from "@/app/styles/mixins";
+
+import { useTagInput } from "./root";
 
 const Counter: React.FC<
 	React.HTMLAttributes<HTMLSpanElement> & { divider?: string }

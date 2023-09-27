@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
-import { useUpload } from "./root";
+
 import { AnimatePresence, motion } from "framer-motion";
+
+import { useUpload } from "./root";
 
 const Error: React.FC = () => {
 	const { fileError } = useUpload();

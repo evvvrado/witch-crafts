@@ -1,8 +1,10 @@
 "use client";
 
 import React from "react";
+
+import { AnimatePresence, motion } from "framer-motion";
+
 import { useTagInput } from "./root";
-import { motion, AnimatePresence } from "framer-motion";
 
 const List: React.FC = () => {
 	const { tagList, removeTag } = useTagInput();

@@ -1,6 +1,8 @@
-import { cn } from "@/app/styles/mixins";
-import ButtonBase from "./button-base";
 import { HTMLAttributes } from "react";
+
+import { cn } from "@/app/styles/mixins";
+
+import ButtonBase from "./button-base";
 
 const solidVariants = {
 	primary:

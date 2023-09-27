@@ -2,9 +2,10 @@
 "use client";
 
 import React, { useMemo } from "react";
-import { useUpload } from "./root";
 
 import { AnimatePresence, motion } from "framer-motion";
+
+import { useUpload } from "./root";
 
 const List: React.FC = () => {
 	const { files, onFilesSelected, setFileError } = useUpload();
